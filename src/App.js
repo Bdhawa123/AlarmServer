@@ -4,6 +4,6 @@ const app = express();
 
 app.use(express.json());
 
-app.use("/medications", require("./routes/medication.routes"));
+app.use("/medications", require("./routes/routes"));
 
 module.exports = app;

@@ -1,4 +1,4 @@
-const repository = require("../repositories/medication.repository");
+const repository = require("../repositories/repo.js");
 
 async function createMedication(data) {
   // validation
@@ -28,6 +28,10 @@ async function deleteAllMedication() {
   return repository.deleteAllMedication();
 }
 
+async function deleteManyMedications(ids) {
+  return repository.deleteManyMedications(ids);
+}
+
 module.exports = {
   getAllMedication,
   getMedication,
@@ -36,4 +40,5 @@ module.exports = {
   updateMedication,
   deleteMedication,
   deleteAllMedication,
+  deleteManyMedications,
 };

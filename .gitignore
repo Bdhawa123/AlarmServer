@@ -113,3 +113,5 @@ uploads/
 
 *.sqlite
 *.db
+*.db-shm
+*.db-wal
